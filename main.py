@@ -3,11 +3,16 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return "Hello World!"
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+@app.post("/api/")
+def read_item(prefix: Union[str, None] = None):
+    if (prefix == "0915"):
+        return "Globe"
+    elif (prefix == "0920"):
+        return "Smart"
+    return "Unknown"
