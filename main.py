@@ -15,4 +15,6 @@ def read_item(prefix: Union[str, None] = None):
         return "Globe"
     elif (prefix == "0920"):
         return "Smart"
+    elif (prefix == "0928"):
+        return "Smart"
     return "Unknown"
