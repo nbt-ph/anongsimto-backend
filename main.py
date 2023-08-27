@@ -27,7 +27,7 @@ def read_item(prefix: Union[str, None] = None):
     return "Unknown"
 
 
-@app.get("/api/getCarrierNumbers")
+@app.get("/api/getCarrierPrefixes")
 # get the prefixes from given carrier
 # input: carrier: string
 # output: prefixes: string[]
@@ -35,7 +35,7 @@ def read_item(carrier: Union[str, None] = None):
     return "Hello World!"
 
 
-@app.get("/api/getCarrierFromNumber")
+@app.get("/api/getCarrierFromPrefix")
 # get the carrier from given prefix
 # input: prefix: string
 # output: carrier: string
