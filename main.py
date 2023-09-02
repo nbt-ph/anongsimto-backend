@@ -27,6 +27,22 @@ def read_item(prefix: Union[str, None] = None):
     return "Unknown"
 
 
+@app.post("/api/loadPrefixData")
+# upsert prefix and carrier data for one pair
+# input: object(prefix, carrier)
+# TODO: update data type
+def read_item(carrier: Union[str, None] = None):
+    return "Hello World!"
+
+
+@app.post("/api/loadPrefixesData")
+# upsert pairs of prefix and carrier data
+# input: object(prefix, carrier)[]
+# TODO: update data type
+def read_item(carrier: Union[str, None] = None):
+    return "Hello World!"
+
+
 @app.get("/api/getCarrierPrefixes")
 # get the prefixes from given carrier
 # input: carrier: string
