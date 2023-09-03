@@ -1,0 +1,34 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "anongsimto",
+    "dateExported": "2023-09-03T09:46:47.623Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5129300d-6827-4002-9702-4539de1f2ef5",
+            "colId": "9445f317-5469-41db-ad26-78ba7b60823e",
+            "containerId": "",
+            "name": "loadPrefixData",
+            "url": "http://127.0.0.1:8000/api/loadPrefixData?carrier=globe&prefix=63915",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-03T06:20:54.622Z",
+            "modified": "2023-09-03T06:29:52.870Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "carrier",
+                    "value": "globe",
+                    "isPath": false
+                },
+                {
+                    "name": "prefix",
+                    "value": "63915",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
